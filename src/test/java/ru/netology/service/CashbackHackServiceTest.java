@@ -9,30 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class CashbackHackServiceTest {
 
     @Test
-    void serviceShould100Advise1900(){
-        // given
-        CashbackHackService service = new CashbackHackService();
-        int amount = 1900;
-        // when
-        int actual = service.remain(amount);
-        int expected = 100;
-        // then
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    void serviceShould0Advise1000(){
-        // given
-        CashbackHackService service = new CashbackHackService();
-        int amount = 1000;
-        // when
-        int actual = service.remain(amount);
-        int expected = 0;
-        // then
-        assertEquals(expected, actual);
-    }
-
-    @Test
     void serviceShould0Advise0(){
         // given
         CashbackHackService service = new CashbackHackService();
